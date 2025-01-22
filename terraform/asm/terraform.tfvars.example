@@ -1,0 +1,3 @@
+secret_environment_variables = [
+  { name = "KEY", value = "DO_NOT_COMMIT_THIS_TFVARS_FILE" },
+]
