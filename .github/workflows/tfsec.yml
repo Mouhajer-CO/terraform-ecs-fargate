@@ -1,0 +1,14 @@
+name: Terraform Security Scanner
+
+on: [pull_request]
+
+jobs:
+  tfsec:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: tfsec
+        uses: aquasecurity/tfsec-action@v1.0.0
