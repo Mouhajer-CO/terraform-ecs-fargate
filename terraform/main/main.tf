@@ -99,7 +99,7 @@ module "ecs" {
       load_balancer = {
         service = {
           // ToDo: Add target groups key 
-          target_group_arn = data.terraform_remote_state.alb.outputs.target_groups["TBD"].arn
+          target_group_arn = data.terraform_remote_state.alb.outputs.target_groups["tg_TBD_app"].arn
           container_name   = local.container_name
           container_port   = local.container_port
         }
